@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+}
+.title {
+  background-color: #1a1a1a;
+  font-size: xx-large;
+}
+p {
+  margin-left: 30px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: #1a1a1a;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  color: #aba4a4;
+}
+main {
+  margin-top: 10px;
+}
+footer {
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  font-size: large;
+  height: 20px;
+  background-color: black;
+}
+body {
+  background-color: #555;
+}
+.card {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #555;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  border-radius: 8px;
+  background-color: #555;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-image {
+  flex: 1;
+}
+.card-image img {
+  margin-left: 30%;
+  width: 30%;
+  border-radius: 8px 0 0 8px;
+}
+
+.card-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card-content p {
+  color: #555;
+}
+
+.blocks{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.blocks li {
+  background-color: #2a333c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1 1 calc(33.33% - 10px); /* 3 items per row, adjust based on space */
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.blocks li:hover {
+  transform: scale(1.05);
+}
+.heading ul li{
+  list-style-type: none;
+  margin-top: 30px;
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+/* Responsive breakpoints */
+@media (max-width: 600px) {
+  .blocks li {
+    flex: 1 1 calc(50% - 10px); /* 2 items per row for small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .blocks li {
+    flex: 1 1 100%; /* 1 item per row for very small screens */
+  }
+}

@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+}
+body {
+  background-color: #555;
+}
+
+.title {
+  background-color: #1a1a1a;
+  font-size: xx-large;
+}
+p {
+  margin-left: 30px;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: #1a1a1a;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:hover {
+  color: #e39910;
+}
+main {
+  margin-top: 200px;
+  margin-bottom: 180px;
+}
+.hero h1{
+  text-align: center;
+  font-size: xx-large;
+}
+/* Text Slider Container */
+.text-slider-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #555;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Slider */
+.text-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Adjust based on number of slides */
+}
+
+/* Individual Text Slide */
+.text-slide {
+  flex: 1 0 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .text-slide {
+    font-size: 1.2rem;
+  }
+}
+.text-slider-container a{
+  background-color: rgb(35, 37, 37);
+  margin-left: 25%;
+  color: aliceblue;
+  border-radius: 10%;
+  text-decoration: none;
+}
+.text-slider-container a:hover{
+  color: rgb(189, 134, 24);
+}
+footer {
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  font-size: large;
+  height: 20px;
+  background-color: black;
+}
