@@ -38,10 +38,10 @@ body {
   background-color: #555;
 }
 .card {
-  margin-top: 50px;
-  margin-left: 5px;
-  margin-right: 5px;
-  display: flex;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #555;
@@ -49,10 +49,10 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card1 {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  display: flex;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   border-radius: 8px;
   background-color: #555;
   width: 90%;
