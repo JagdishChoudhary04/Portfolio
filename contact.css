@@ -44,9 +44,7 @@ main {
 }
 footer {
   text-align: center;
-  margin: 5px;
   padding: 10px;
-  font-size: large;
   height: 20px;
   background-color: black;
 }
