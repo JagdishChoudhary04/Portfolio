@@ -1,29 +1,63 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
+
+const navItems = [
+  "About",
+  "Experience",
+  "Skills",
+  "Projects",
+  "Certifications",
+];
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <nav className="fixed top-0 left-0 w-full backdrop-blur bg-white/70 dark:bg-black/70 z-50 border-b border-gray-200 dark:border-gray-800">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-xl font-bold text-gray-800 dark:text-white">
-          👨‍💻 Jagdish Choudhary
-        </h1>
-        <div className="flex items-center gap-4">
-          <a
-            href="#about"
-            className="hover:text-blue-500 dark:hover:text-blue-400">
-            About
-          </a>
-          <a
-            href="#skills"
-            className="hover:text-blue-500 dark:hover:text-blue-400">
-            Skills
-          </a>
-          <a
-            href="#projects"
-            className="hover:text-blue-500 dark:hover:text-blue-400">
-            Projects
-          </a>
+    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full flex justify-center">
+      <div className="bg-white/30 backdrop-blur-md text-white rounded-full shadow-lg px-6 py-3 flex items-center justify-between gap-6 transition-all duration-300 max-w-[90vw] md:max-w-3xl w-full">
+        {/* Brand */}
+        <motion.h1
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="text-base md:text-lg font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+          👨‍💻 JC
+        </motion.h1>
+
+        {/* Desktop Nav */}
+        <div className="hidden md:flex gap-5 text-sm font-medium">
+          {navItems.map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="hover:text-orange-400 transition">
+              {item}
+            </a>
+          ))}
+        </div>
+
+        {/* Hamburger */}
+        <div className="md:hidden ml-auto">
+          <button onClick={() => setOpen(!open)} aria-label="Toggle Menu">
+            {open ? <X size={20} /> : <Menu size={20} />}
+          </button>
         </div>
       </div>
-    </nav>
+
+      {/* Mobile Menu */}
+      {open && (
+        <div className="absolute top-[72px] w-[90vw] max-w-3xl bg-black/80 backdrop-blur-md rounded-xl shadow-xl py-4 px-6 flex flex-col items-center space-y-4 md:hidden">
+          {navItems.map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              onClick={() => setOpen(false)}
+              className="text-white hover:text-pink-400 text-base">
+              {item}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

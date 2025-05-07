@@ -36,8 +36,8 @@ export default function CertificationsSection() {
   const currentCert = certificates[current];
 
   return (
-    <section className="max-w-4xl mx-auto py-1 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold m-6 text-gray-900 dark:text-white">
+    <section className="max-w-3xl mx-auto py-1 px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-bold m-1 text-gray-900 dark:text-white">
         Certifications
       </h2>
 

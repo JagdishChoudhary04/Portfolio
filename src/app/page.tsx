@@ -1,5 +1,6 @@
 "use client"
 import Navbar from "@/components/Navbar";
+import Profile from "@/components/Profile"
 import Experience from "@/components/experience"
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -11,6 +12,9 @@ export default function Home() {
   return (
     <main className="bg-white dark:bg-black text-black dark:text-white">
       <Navbar />
+      <section id="profile">
+        <Profile />
+      </section>
       <section id="hero" className="pt-24">
         <Hero />
       </section>
@@ -26,7 +30,7 @@ export default function Home() {
       <section id="projects">
         <Projects />
       </section>
-      <section id="certificates">
+      <section id="certifications">
         <CertificationSection />
       </section>
       <Footer />
