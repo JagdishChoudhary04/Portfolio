@@ -8,8 +8,8 @@ const certificates = [
     type: "image",
   },
   {
-    title: "Introduction to Python OpenCV",
-    src: "/OpenCV Python_page-0001.jpg",
+    title: "Full-Stack Web Development",
+    src: "/udemy.jpg",
     type: "image",
   },
   {
