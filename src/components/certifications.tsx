@@ -17,7 +17,12 @@ const certificates = [
     src: "/certificate-dbms_page-0001.jpg",
     type: "image",
   },
-  // Add more certificates here
+  {
+    title: "Object Oriented Programming",
+    src: "/oops.jpg",
+    type: "image",
+  },
+  
 ];
 
 export default function CertificationsSection() {
@@ -27,7 +32,6 @@ export default function CertificationsSection() {
     setCurrent((prev) => (prev + 1) % certificates.length);
   };
 
-  // Auto-scroll every 5 seconds
   useEffect(() => {
     const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
@@ -42,11 +46,12 @@ export default function CertificationsSection() {
       </h2>
 
       {/* Title */}
-      <div className="text-xl font-bold mb-8 text-gray-900 dark:text-white text-center">
+      <div className="text-xl font-bold mb-4 text-gray-900 dark:text-white text-center">
         {currentCert.title}
       </div>
+
       <div className="relative flex justify-center items-center">
-        <div className="w-full h-64 sm:h-[500px] border rounded-lg overflow-hidden bg-white dark:bg-gray-900 shadow-md">
+        <div className="w-full h-auto sm:h-[500px] border rounded-lg overflow-hidden bg-white dark:bg-gray-900 shadow-md relative">
           {currentCert.type === "pdf" ? (
             <iframe
               title={currentCert.title}
@@ -57,7 +62,9 @@ export default function CertificationsSection() {
             <Image
               src={currentCert.src}
               alt={currentCert.title}
-              layout="fill" // or "responsive", depending on use-case
+              layout="responsive"
+              width={800}
+              height={600}
               className="object-contain"
             />
           )}

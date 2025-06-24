@@ -4,15 +4,17 @@ export default function About() {
       <h2 className="text-3xl font-bold m-6 text-gray-900 dark:text-white text-justify">
         Experience
       </h2>
-      <h1 className="text-2xl font-bold text-gray-900 dark:text-white m-6">Robotics Trainer at Robokart - Dec24</h1>
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify m-6">
-        Conducted hands-on training sessions for 100+ students, introducing them
-        to electronics, robotics, and innovative technologies. Educated students
-        on the practical use of digital microscopes, drones, and
-        microcontrollers, fostering interest in STEM fields. Played a
-        significant role in a government initiative to enhance technical skills
-        among students in Gujarat.
-      </p>
+      <h1 className="text-2xl font-bold text-gray-900 dark:text-white m-6">
+        Robotics Trainer Intern at Robokart – Dec 2024
+      </h1>
+      <ul className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed list-disc list-inside m-6 space-y-4 text-justify">
+        <li>
+          Led hands-on training sessions for <strong>100+ students</strong> as part of a <strong>government initiative in Gujarat</strong>, aiming to enhance STEM education. Delivered interactive workshops on <strong>electronics, robotics, and innovation</strong>, creating an engaging and practical learning environment.
+        </li>
+        <li>
+          Educated students on the use of <strong>digital microscopes, drones, and microcontrollers</strong>, simplifying technical concepts through live demonstrations. Successfully <strong>fostered curiosity and technical confidence</strong>, inspiring many to explore careers in science and technology.
+        </li>
+      </ul>
     </div>
   );
 }

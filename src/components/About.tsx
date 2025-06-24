@@ -4,25 +4,23 @@ export default function About() {
       <h2 className="text-3xl font-bold m-6 text-gray-900 dark:text-white text-justify">
         About Me
       </h2>
-      <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify m-6">
-        Hi, I&apos;m Jagdish Choudhary, a Third-year Electronics &
-        Telecommunication Engineering student passionate about building smart,
-        scalable tech solutions that bridge hardware and software. I specialize
-        in C++, JavaScript, and full-stack web development, currently working
-        with the MERN stack (MongoDB, Express, React, Node.js). I&apos;m also
-        experienced with ESP32/ESP8266, sensor integration, Firebase, and
-        real-time IoT systems. 🛠️ My key projects include: IoT-Based Smart
-        Street Light System : Real-time city-wide light monitoring with Firebase
-        + ESP8266. Energy Monitoring Meter : Tracks energy usage and cost trends
-        via a web dashboard (Next.js + Tailwind + MongoDB). 12-Channel
-        Remote-Controlled Drone : Custom PCB + Arduino Nano + NRF24L01 +
-        MPU6050. E-Commerce Website : End-to-end responsive store with
-        authentication and cart system. Smart Waste Segregator & Gas Leak
-        Detector using Arduino 💡 I always like exploring the “why” behind
-        systems, love diving into DSA, and stay hands-on with electronics and
-        real-world problem-solving. My learning pace is fast, and I thrive in
-        collaborative, innovation-driven environments.
-      </p>
+      <ul className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed list-disc list-inside m-6 space-y-4 text-justify">
+        <li>
+          Final-year <strong>Electronics & Telecommunication Engineering</strong> student passionate about building smart, scalable tech that bridges hardware and software.
+        </li>
+        <li>
+          Skilled in <strong>C++</strong>, <strong>JavaScript</strong>, and <strong>MERN stack</strong> development, with hands-on experience in <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, <strong>Firebase</strong>, and <strong>MongoDB</strong>.
+        </li>
+        <li>
+          Experienced with <strong>ESP32/ESP8266</strong>, <strong>Arduino</strong>, sensor integration, and developing real-time <strong>IoT systems</strong> with cloud-based data monitoring.
+        </li>
+        <li>
+          Key projects include a <strong>Smart Street Light System</strong>, <strong>Energy Monitoring Meter</strong>, <strong>12-Channel Drone</strong>, <strong>E-Commerce Website</strong>, and <strong>Smart Waste Segregator</strong>.
+        </li>
+        <li>
+          Fast learner with strong interest in <strong>Data Structures & Algorithms (DSA)</strong>, problem-solving, and thriving in collaborative, innovation-driven environments.
+        </li>
+      </ul>
     </div>
   );
 }
