@@ -1,8 +1,6 @@
 "use client";
 import { FaReact, FaNodeJs, FaGitAlt, FaGithub, FaJava, FaCloud } from "react-icons/fa";
 import { SiNextdotjs, SiMongodb, SiTailwindcss, SiJavascript, SiTypescript, SiFirebase, SiPostman, SiExpress, SiC, SiCplusplus, SiFramer, SiShadcnui } from "react-icons/si";
-import { DiPython } from "react-icons/di";
-import { TbBrandCpp } from "react-icons/tb";
 import { SiArduino, SiEagle } from "react-icons/si";
 
 export default function Skills() {
