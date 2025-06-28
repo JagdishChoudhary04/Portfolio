@@ -1,20 +1,18 @@
-"use client";
-import React from "react";
-import { FaGlobe, FaCodechef } from "react-icons/fa";
 import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
+import { FaGlobe } from "react-icons/fa";
 
-const CodingAchievements = () => {
+export default function CodingProgress() {
   return (
-    <section className="max-w-4xl mx-auto py-20">
-      <div className="max-w-7xl mx-auto py-20" >
-        <h2 className="text-3xl font-bold mb-10 text-gray-800 dark:text-white">
-            Coding Progress
+    <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">
+          Coding Progress
         </h2>
 
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10">
           {/* Left: Total Questions Solved */}
-          <div className="w-full bg-gray-100 dark:bg-gray-800 p-10 rounded-2xl shadow-md flex flex-col items-center justify-center">
+          <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-md flex flex-col items-center justify-center text-center">
             <h3 className="text-xl text-gray-700 dark:text-gray-300 font-medium mb-2">
               Total Questions Solved
             </h3>
@@ -24,11 +22,11 @@ const CodingAchievements = () => {
           </div>
 
           {/* Right: Coding Profiles */}
-          <div className="w-full bg-gray-100 dark:bg-gray-800 p-6 rounded-2xl shadow-md">
-            <h3 className="text-xl font-semibold mb-4 text-center text-gray-800 dark:text-white">
+          <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-md text-center">
+            <h3 className="text-xl font-semibold mb-6 text-gray-800 dark:text-white">
               Coding Profiles
             </h3>
-            <div className=" items-center flex flex-col space-y-4">
+            <div className="flex flex-col space-y-5 items-center">
               {/* LeetCode */}
               <a
                 href="https://leetcode.com/Jagdish_Choudhary/"
@@ -78,6 +76,4 @@ const CodingAchievements = () => {
       </div>
     </section>
   );
-};
-
-export default CodingAchievements;
+}
