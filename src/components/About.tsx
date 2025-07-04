@@ -4,7 +4,7 @@ export default function About() {
       <h2 className="text-3xl font-bold m-6 text-gray-900 dark:text-white text-justify">
         About Me
       </h2>
-      <ul className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed list-disc list-inside m-6 space-y-4 text-justify">
+      <ul className="text-sm md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed list-disc list-inside m-6 space-y-4 text-justify">
         <li>
           Final-year <strong>Electronics & Telecommunication Engineering</strong> student passionate about building smart, scalable tech that bridges hardware and software.
         </li>
