@@ -12,7 +12,7 @@ export default function Hero() {
           <p className="text-md text-gray-500 dark:text-gray-400 tracking-widest uppercase">Hi,</p>
 
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-            I'm <span className="text-pink-600">Jagdish Choudhary</span><br />
+            I&apos;m <span className="text-pink-600">Jagdish Choudhary</span><br />
             <span className="mt-4 block text-lg md:text-2xl font-medium text-gray-700 dark:text-gray-300">
               <Typewriter
                 words={[
