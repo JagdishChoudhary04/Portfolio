@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import ClientThemeProvider from "@/components/ClientThemeProvider"; // move ThemeProvider into its own client component
+import Script from "next/script";
 
 export const metadata = {
   title: "Jagdish Choudhary | Portfolio",
@@ -33,6 +34,15 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Google AdSense */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4565170326177969"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body>
         <ClientThemeProvider>
           {children}
