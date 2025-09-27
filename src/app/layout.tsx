@@ -29,6 +29,9 @@ export const metadata = {
     description: "Check out my projects and experience as a full-stack developer.",
     images: ["https://jagdishchoudhary.site/og-image.jpg"],
   },
+  other: {
+    "google-adsense-account": "ca-pub-4565170326177969",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
