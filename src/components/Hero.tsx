@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center">
         {/* Left Column (Text) */}
         <div className="flex-1 text-center md:text-left space-y-6 mt-10 md:mt-0">
-          <p className="text-md text-gray-500 dark:text-gray-400 tracking-widest uppercase">Hi,</p>
+          <p className="text-md text-gray-500 dark:text-gray-400 tracking-widest">Hi,</p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
             I&apos;m <span className="text-pink-600">Jagdish Choudhary</span><br />
             <span className="mt-4 block text-lg md:text-2xl font-medium text-gray-700 dark:text-gray-300">
@@ -88,3 +88,4 @@ export default function Hero() {
     </section>
   );
 }
+
