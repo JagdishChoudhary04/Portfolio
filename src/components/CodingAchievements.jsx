@@ -17,7 +17,7 @@ export default function CodingProgress() {
               Total Questions Solved
             </h3>
             <p className="text-5xl font-bold text-indigo-600 dark:text-indigo-400">
-              300+
+              500+
             </p>
           </div>
 
