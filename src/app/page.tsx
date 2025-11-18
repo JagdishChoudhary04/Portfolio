@@ -15,6 +15,11 @@ export default function Home() {
   return (
     <main className="bg-white dark:bg-black text-black dark:text-white">
       <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4565170326177969"
+          crossOrigin="anonymous"
+        ></script>
         <title>Jagdish Choudhary | Portfolio</title>
         <meta
           name="description"
