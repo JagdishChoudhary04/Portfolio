@@ -7,26 +7,30 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jagdishchoudhary.site"),
+  applicationName: "Jagdish Choudhary Portfolio",
   title: {
     default: "Jagdish Choudhary | Portfolio",
     template: "%s | Jagdish Choudhary",
   },
   description:
-    "Portfolio of Jagdish Choudhary – software engineer passionate about full-stack development, electronics, embedded systems, and IoT.",
+    "I’m Jagdish Choudhary, a software engineer passionate about full-stack development, electronics, embedded systems, and IoT. Explore my projects, experience, and skills.",
   keywords: [
     "Jagdish Choudhary",
+    "Jagdish portfolio",
+    "Jagdish Choudhary portfolio",
     "software engineer",
     "full-stack developer",
     "Next.js developer",
-    "React",
+    "React developer",
     "TypeScript",
-    "Python",
     "C++",
     "electronics projects",
     "IoT projects",
-    "portfolio",
   ],
-  authors: [{ name: "Jagdish Choudhary" }],
+  authors: [{ name: "Jagdish Choudhary", url: "https://jagdishchoudhary.site" }],
+  creator: "Jagdish Choudhary",
+  publisher: "Jagdish Choudhary",
+  category: "Technology",
   openGraph: {
     title: "Jagdish Choudhary | Portfolio",
     description: "Explore my software projects, electronics builds, and experience.",
@@ -34,10 +38,10 @@ export const metadata: Metadata = {
     siteName: "Jagdish's Portfolio",
     images: [
       {
-        // 👉 put your new header/social image in /public and update this path
         url: "https://jagdishchoudhary.site/og-image-new.jpg",
         width: 1200,
         height: 630,
+        alt: "Jagdish Choudhary Portfolio Preview",
       },
     ],
     locale: "en_US",
@@ -58,15 +62,32 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    // 👉 this controls the small round icon in the browser header/tab
-    icon: "/header.png", // create app/icon.png or public/icon.png
+    icon: "/header.png",
   },
   other: {
     "google-adsense-account": "ca-pub-4565170326177969",
+    // Add your Google Search Console verification here once you generate it:
+    // "google-site-verification": "YOUR_VERIFICATION_CODE",
   },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+  // JSON-LD Person Schema for Google
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Jagdish Choudhary",
+    url: "https://jagdishchoudhary.site",
+    sameAs: [
+      "https://www.linkedin.com/in/jagdish-choudhary-***", // put real link
+      "https://github.com/***",                               // your GitHub
+      "https://leetcode.com/Jagdish_Choudhary/",
+    ],
+    jobTitle: "Software Engineer",
+    description:
+      "Software engineer and electronics enthusiast working on full-stack web apps, drones, IoT, and embedded systems.",
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -76,6 +97,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4565170326177969"
           crossOrigin="anonymous"
           strategy="afterInteractive"
+        />
+
+        {/* Google Search Console verification (replace content with your code) */}
+        {/* <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> */}
+
+        {/* JSON-LD structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body>

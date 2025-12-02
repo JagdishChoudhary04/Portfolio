@@ -22,6 +22,11 @@ const certificates = [
     src: "/oops.jpg",
     type: "image",
   },
+  {
+    title: "AWS Cloud Foundations",
+    src: "/aws-academy.png",
+    type: "image",
+  },
   
 ];
 

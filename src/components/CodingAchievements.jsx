@@ -10,64 +10,75 @@ export default function CodingProgress() {
         </h2>
 
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10">
-          {/* Left: Total Questions Solved */}
-          <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-md flex flex-col items-center justify-center text-center">
-            <h3 className="text-xl text-gray-700 dark:text-gray-300 font-medium mb-2">
-              Total Questions Solved
-            </h3>
-            <p className="text-5xl font-bold text-indigo-600 dark:text-indigo-400">
-              500+
-            </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch py-10">
+
+          {/* LEFT COLUMN */}
+          <div className="flex flex-col gap-6 h-full justify-between">
+
+            {/* Total Questions Solved */}
+            <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-md flex flex-col items-center justify-center text-center h-full">
+              <h3 className="text-xl text-gray-700 dark:text-gray-300 font-medium mb-2">
+                Total Questions Solved
+              </h3>
+              <p className="text-5xl font-bold text-indigo-600 dark:text-indigo-400">
+                700+
+              </p>
+            </div>
+
+            {/* Contests Given */}
+            <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-md flex flex-col items-center justify-center text-center h-full">
+              <h3 className="text-xl text-gray-700 dark:text-gray-300 font-medium mb-2">
+                Total Contests Given
+              </h3>
+              <p className="text-5xl font-bold text-indigo-600 dark:text-indigo-400">
+                15
+              </p>
+            </div>
           </div>
 
-          {/* Right: Coding Profiles */}
-          <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-md text-center">
+          {/* RIGHT: Coding Profiles */}
+          <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl shadow-md text-center h-full flex flex-col justify-center">
             <h3 className="text-xl font-semibold mb-6 text-gray-800 dark:text-white">
               Coding Profiles
             </h3>
-            <div className="flex flex-col space-y-5 items-center">
-              {/* LeetCode */}
+            <div className="flex flex-col space-y-4 items-center text-base">
               <a
                 href="https://leetcode.com/Jagdish_Choudhary/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 hover:text-yellow-500 text-gray-700 dark:text-gray-200 transition"
               >
-                <SiLeetcode className="text-2xl" />
+                <SiLeetcode className="text-xl" />
                 <span>LeetCode</span>
               </a>
 
-              {/* GeeksforGeeks */}
               <a
                 href="https://auth.geeksforgeeks.org/user/jagdish01/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 hover:text-green-600 text-gray-700 dark:text-gray-200 transition"
               >
-                <SiGeeksforgeeks className="text-2xl" />
+                <SiGeeksforgeeks className="text-xl" />
                 <span>GeeksforGeeks</span>
               </a>
 
-              {/* Codeforces */}
               <a
                 href="https://codeforces.com/profile/Jagdish-Choudhary"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 hover:text-purple-600 text-gray-700 dark:text-gray-200 transition"
               >
-                <FaGlobe className="text-2xl" />
+                <FaGlobe className="text-xl" />
                 <span>Codeforces</span>
               </a>
 
-              {/* CodeChef */}
               <a
                 href="https://www.codechef.com/users/jagdsh01"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 hover:text-[#5B4638] text-gray-700 dark:text-gray-200 transition"
               >
-                <FaGlobe className="text-2xl" />
+                <FaGlobe className="text-xl" />
                 <span>CodeChef</span>
               </a>
             </div>

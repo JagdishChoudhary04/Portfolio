@@ -6,19 +6,19 @@ export default function About() {
       </h2>
       <ul className="text-sm md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed list-disc list-inside m-6 space-y-4 text-justify">
         <li>
-          Final-year <strong>Electronics & Telecommunication Engineering</strong> student passionate about building smart, scalable tech that bridges hardware and software.
+          Final-year Electronics & Telecommunication Engineering student passionate about building smart, scalable tech that bridges hardware and software.
         </li>
         <li>
-          Skilled in <strong>C++</strong>, <strong>JavaScript</strong>, and <strong>MERN stack</strong> development, with hands-on experience in <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, <strong>Firebase</strong>, and <strong>MongoDB</strong>.
+          Skilled in C++, JavaScript, and MERN stack development, with hands-on experience in Next.js, Tailwind CSS, Firebase, and MongoDB.
         </li>
         <li>
-          Experienced with <strong>ESP32/ESP8266</strong>, <strong>Arduino</strong>, sensor integration, and developing real-time <strong>IoT systems</strong> with cloud-based data monitoring.
+          Experienced with ESP32/ESP8266, Arduino, sensor integration, and developing real-time IoT systems with cloud-based data monitoring.
         </li>
         <li>
-          Key projects include a <strong>Smart Street Light System</strong>, <strong>Energy Monitoring Meter</strong>, <strong>12-Channel Drone</strong>, <strong>E-Commerce Website</strong>, and <strong>Smart Waste Segregator</strong>.
+          Key projects include a Smart Street Light System, Energy Monitoring Meter, 12-Channel Drone, E-Commerce Website, and Smart Waste Segregator.
         </li>
         <li>
-          Fast learner with strong interest in <strong>Data Structures & Algorithms (DSA)</strong>, problem-solving, and thriving in collaborative, innovation-driven environments.
+          Fast learner with strong interest in Data Structures & Algorithms (DSA), problem-solving, and thriving in collaborative, innovation-driven environments.
         </li>
       </ul>
     </div>

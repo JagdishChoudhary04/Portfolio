@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="max-w-4xl mx-auto py-20 px-4">
-      <h2 className="text-4xl font-extrabold mb-12 text-gray-900 dark:text-white">
+      <h2 className="text-3xl font-extrabold mb-12 text-gray-900 dark:text-white">
         Experience
       </h2>
 
