@@ -60,7 +60,7 @@ export default function Hero() {
         <div className="flex-1 flex flex-col items-center">
           <div className="relative w-[300px] h-[300px] md:w-[360px] md:h-[360px] rounded-full border-[8px] border-gradient-to-r from-purple-500 to-pink-500 shadow-xl flex items-center justify-center">
             <Image
-              src="/profile.jpg"
+              src="/Jagdish.jpg"
               alt="Jagdish Choudhary"
               width={500}
               height={500}
