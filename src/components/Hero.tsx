@@ -1,5 +1,5 @@
 "use client";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -39,7 +39,7 @@ export default function Hero() {
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-6 pt-4">
             <a
-              href="https://drive.google.com/file/d/11lAXgy_ULuAiCMZFQmMPlB9dDEpZkKC8/view"
+              href="https://drive.google.com/file/d/1lDB77cX1pYK4DKMXf5ujdl66n99jEbCT/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-gray-800 dark:bg-gray-800 dark:text-white border border-gray-300 dark:border-gray-600 px-6 py-2 rounded-full font-semibold shadow hover:bg-gray-100 dark:hover:bg-gray-700 transition"
@@ -50,7 +50,6 @@ export default function Hero() {
             <div className="flex gap-4">
               <a href="https://github.com/JagdishChoudhary04" target="_blank"><FaGithub size={24} /></a>
               <a href="https://www.linkedin.com/in/choudhary-jagdish" target="_blank"><FaLinkedin size={24} /></a>
-              <a href="https://x.com/Jagdish_Extc" target="_blank"><FaTwitter size={24} /></a>
               <a href="https://www.instagram.com/jagdishchoudhary9268/" target="_blank"><FaInstagram size={24} /></a>
             </div>
           </div>
