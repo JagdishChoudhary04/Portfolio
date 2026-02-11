@@ -8,7 +8,7 @@ export default function About() {
       {/* Nurture Xcel */}
       <div className="mb-16">
         <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-          Software Developer Intern at Nurture Xcel — Oct 2025 – Present
+          Software Developer Intern at Nurture Xcel — Oct 2025 – Jan 2026
         </h3>
         <ul className="list-disc list-inside space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
           <li>

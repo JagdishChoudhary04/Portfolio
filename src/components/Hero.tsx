@@ -71,7 +71,7 @@ export default function Hero() {
           {/* Mobile Buttons */}
           <div className="flex flex-col items-center mt-6 gap-4 md:hidden">
             <a
-              href="https://drive.google.com/file/d/11lAXgy_ULuAiCMZFQmMPlB9dDEpZkKC8/view"
+              href="https://drive.google.com/file/d/1lDB77cX1pYK4DKMXf5ujdl66n99jEbCT/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold shadow hover:bg-blue-700 transition"
@@ -82,7 +82,6 @@ export default function Hero() {
             <div className="flex gap-4">
               <a href="https://github.com/JagdishChoudhary04" target="_blank"><FaGithub size={24} /></a>
               <a href="https://www.linkedin.com/in/choudhary-jagdish" target="_blank"><FaLinkedin size={24} /></a>
-              <a href="https://twitter.com/" target="_blank"><FaTwitter size={24} /></a>
               <a href="https://instagram.com/" target="_blank"><FaInstagram size={24} /></a>
             </div>
           </div>
