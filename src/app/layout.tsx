@@ -67,7 +67,6 @@ export const metadata: Metadata = {
   other: {
     "google-adsense-account": "ca-pub-4565170326177969",
     // Add your Google Search Console verification here once you generate it:
-    // "google-site-verification": "YOUR_VERIFICATION_CODE",
   },
 };
 
